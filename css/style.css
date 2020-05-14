@@ -365,9 +365,9 @@ table{
     right: 0;
 }
 .code_img{
-    position: absolute;
-    top: 110px;
-    right: 180px;
+    position: relative;
+    top: -450px;
+    right: -750px;
 }
 /** 表頭 **/
 
