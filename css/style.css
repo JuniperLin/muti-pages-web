@@ -1,0 +1,500 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/***-- layout --***/
+.wrap{
+    margin: 0 auto;
+    width: 1024px;
+    background-color: #ffffff;
+}
+.navbar{
+    display: flex;
+    background: #4a4a4a98;
+    justify-content: space-between;
+}
+.navbar img{
+    margin: 21px 0px 21px 42px;
+}
+.navbar ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar ul li{
+    margin-right: 42px;
+}
+.navbar ul li a{
+    padding: 32px 16px 16px 16px;
+    color: #ffffff;
+    text-decoration: none;
+    border-bottom: 0px solid #00cc99;
+    transition: 0.1s;
+}
+.navbar ul li a:hover{
+    color: #00cc99;
+    border-bottom: 9px solid #00cc99;
+    font-size: 20px;
+    transition-duration: 0.2s;
+}
+.footer{
+    display: flex;
+    background-color: #4a4a4a;
+    justify-content: space-between;
+}
+.footer_logo{
+    text-align: right;
+    margin: 21px 0px 21px 42px;
+}
+.footer_logo p{
+    margin-top: 5px;
+    color: #9b9b9b;
+}
+.social_link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 12px;
+}
+.facebook{
+    background-image: url(../img/fb.png);
+}
+.twitter{
+    background-image: url(../img/tw.png);
+}
+.instagram{
+    background-image: url(../img/ig.png);
+}
+.social_link p{
+    margin-right: 21px;
+}
+.social_link p a{
+    width: 32px;
+    height: 32px;
+    display: block;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap; 
+}
+/*網頁內各區域的標題*/
+.title{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+.title h2 span{
+    color: #00cc99;
+    font-size: 35px;
+    margin-right: 18px;
+    letter-spacing: 3px;
+}
+.title h2{
+    font-size: 19px;
+    color: #9b9b9b;
+    letter-spacing: 2px;
+}
+/*網頁內各區域的標題*/
+/***-- layout --***/
+
+/*----------------------*/
+
+/***-- index --***/
+/** 表頭 **/
+.index_header{
+    background-image: url(../img/bg_index.png);
+}
+.index_header h2{
+    font-size: 48px;
+    color: #00cc99;
+    line-height: 1.8em;
+    letter-spacing: 3px;
+    margin: 109px 0px 55px 45px;
+}
+.index_header span{
+    color: #ffffff;
+}
+.index_header button{
+    background-color: #00cc99;
+    border: none;
+    margin: 0px 0px 84px 45px;
+    padding: 15px 40px 15px 40px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 3px;
+    color: #ffffff;
+    cursor: pointer;
+    outline: 0;
+}
+.index_header button span{
+    cursor: pointer;
+    position: relative;
+    transition: 0.5s;
+}
+.index_header button span:after{
+    content: '➔';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+.index_header button:hover span{
+    padding-right: 60px;
+}
+.index_header button:hover span:after{
+    opacity: 1;
+    right: 0;
+}
+/** 表頭 **/
+
+/** 精選課程 **/
+.content{
+    margin: 59px 45px 0px 45px;
+}
+.index_intro{
+    margin-bottom: 59px;
+}
+.title input{
+    border: 2px solid #00cc99;
+    border-radius: 8px;
+    cursor: pointer;
+    outline: 0;
+    color: #00cc99;
+    padding: 0px 15px 0px 15px;
+    transition: 0.2s;
+}
+.title input:hover{
+    background: #00cc99;
+    color: #ffffff;
+    transition: 0.2s;
+}
+.course{
+    display: flex;
+    justify-content: space-between;
+}
+.course li{
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 27px 19px 27px 19px;
+    box-shadow: 1px 2px 10px 1px #9b9b9b;
+}
+.course li h3{
+    color: #4a4a4a;
+    font-size: 20px;
+    margin-top: 16px;
+    margin-bottom: 18px;
+}
+.course li p{
+    color: #9b9b9b;
+    line-height: 1.5em;
+}
+/** 精選課程 **/
+
+/** 課程比較 **/
+.comparison{
+    margin-bottom: 59px;
+}
+table th{
+    background: #d3d3d3;
+}
+th,td{
+    font-size: 17px;
+    letter-spacing: 1px;
+    padding: 20px 10px;
+    text-align: center;
+    border-top: 1.5px solid #d3d3d3;
+    border-bottom: 1.5px solid #d3d3d3;
+}
+.narrow_table{
+    width: 14%;
+}
+table{
+    border-collapse: collapse;
+    caption-side: top;
+    width: 100%;
+}
+.green{
+    color: #00cc99;
+}
+/** 課程比較 **/
+
+/** 訂閱 **/
+.sub{
+    display: flex;
+    justify-content: space-between;
+    background: #ebebeb;
+    padding: 140px 45px 60px 45px;
+}
+.index_input{
+    text-align: right;
+}
+.sub h3{
+    font-size: 30px;
+    line-height: 2em;
+    letter-spacing: 2px;
+    width: 50%;
+}
+.index_input{
+    width: 50%;
+}
+.index_input input{
+    padding: 17px 24px;
+    margin: 8px 0px;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    outline: 0;
+}
+.index_input input[type="text"]{
+    width: 89%;
+}
+.index_input input[type="submit"]{
+    width: 30%;
+    background: #00cc99;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px;
+    transition: 0.5s;
+}
+.index_input input[type="submit"]:hover{
+    background: #00a57c;
+    transition: 0.5s;    
+}
+/** 訂閱 **/
+
+/***-- index --***/
+
+/*----------------------*/
+
+/***-- course --***/
+/** 表頭 **/
+.course_header{
+    background-image: url(../img/bg_course.png);
+}
+.course_header h2{
+    margin: 109px 0px 0px 45px;
+    color: #ffffff;
+    font-size: 48px;
+    letter-spacing: 3px;
+}
+.course_header p{
+    color: #00cc99;
+    font-size: 25px;
+    margin: 20px 0px 63px 45px;
+}
+.course_header button{
+    background-color: #00cc99;
+    border: none;
+    margin: 0px 0px 160px 45px;
+    padding: 15px 40px 15px 40px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 3px;
+    color: #ffffff;
+    cursor: pointer;
+    outline: 0;
+}
+.course_header button span{
+    cursor: pointer;
+    position: relative;
+    transition: 0.5s;
+}
+.course_header button span:after{
+    content: '➔';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+.course_header button:hover span{
+    padding-right: 60px;
+}
+.course_header button:hover span:after{
+    opacity: 1;
+    right: 0;
+}
+.code_img{
+    position: absolute;
+    top: 110px;
+    right: 180px;
+}
+/** 表頭 **/
+
+/** 內容 **/
+.course_content{
+    margin: 0 auto;
+    width: 70%;
+}
+/** 內容 **/
+
+/** 老師 **/
+.teacher{
+    display: flex;
+    margin: 63px 0px 63px 0px;
+}
+.teacher_name{
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.teacher_name h1{
+    font-size: 35px;
+    color: #00cc99;
+    margin-bottom: 19px;
+}
+.teacher_name p{
+    font-size: 35px;
+    color: #322829;
+}
+.teacher ul{
+    margin-left: 38px;
+    position: relative;
+    top: 62px;
+}
+.teacher ul li{
+    margin-bottom: 11px;
+    color: #9b9b9b;
+    font-size: 18px;
+}
+.teacher ul li:before{
+    content: "·";
+    margin-right: 30px;
+    color: #9b9b9b;
+}
+/** 老師 **/
+
+/** 課程有什麼特別 **/
+.course_intro{
+    margin-bottom: 63px;
+}
+.course_intro ol{
+    color: #322829;
+    font-size: 18px;
+    list-style-type: decimal;
+    line-height: 34px;
+}
+.course_intro li{
+    margin-left: 21px;
+    padding-left: 20px;
+}
+/** 課程有什麼特別 **/
+
+/** 課程大綱 **/
+.outline{
+    margin-bottom: 63px;
+}
+.outline li{
+    background-color: #ebebeb;
+    padding-left: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.outline .gray{
+    background-color: #ffffff;
+    color: #9b9b9b;
+}
+/** 課程大綱 **/
+
+/** 註冊 **/
+.register{
+    background: #ebebeb;
+    display: flex;
+    align-items: center;
+}
+.register h3{
+    width: 50%;
+    font-size: 30px;
+    line-height: 2em;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: flex-end;
+    margin: 159px 30px 159px 0px;
+}
+.register button{
+    background-color: #00cc99;
+    border: none;
+    margin: 30px 0px 0px 30px;
+    padding: 15px 40px 15px 40px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 3px;
+    color: #ffffff;
+    cursor: pointer;
+    outline: 0;
+}
+.register button span{
+    cursor: pointer;
+    position: relative;
+    transition: 0.5s;
+}
+.register button span:after{
+    content: '➔';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+.register button:hover span{
+    padding-right: 60px;
+}
+.register button:hover span:after{
+    opacity: 1;
+    right: 0;
+}
+
+/** 註冊 **/
+/***-- course --***/
