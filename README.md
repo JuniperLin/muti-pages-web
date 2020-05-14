@@ -1,1 +1,1 @@
-<a herf="https://juniperlin.github.io/muti-pages-web/faq.html"></a>
+<a herf="https://juniperlin.github.io/muti-pages-web/index.html"></a>
