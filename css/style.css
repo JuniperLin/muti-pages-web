@@ -288,12 +288,12 @@ table{
 .index_input input{
     padding: 17px 24px;
     margin: 8px 0px;
+    font-size: 20px;
     border: none;
     cursor: pointer;
     border-radius: 6px;
     outline: 0;
     width: 89%;
-    font-size: 20px;
 }
 
 .index_input input[type="submit"]{
