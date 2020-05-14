@@ -310,7 +310,6 @@ table{
     transition: 0.5s;    
 }
 /** 訂閱 **/
-
 /***-- index --***/
 
 /*----------------------*/
@@ -334,7 +333,7 @@ table{
 .course_header button{
     background-color: #00cc99;
     border: none;
-    margin: 0px 0px 160px 45px;
+    margin: 0px 0px 10px 45px;
     padding: 15px 40px 15px 40px;
     border-radius: 10px;
     font-size: 20px;
@@ -366,7 +365,7 @@ table{
 }
 .code_img{
     position: relative;
-    top: -450px;
+    top: -300px;
     right: -750px;
 }
 /** 表頭 **/
@@ -495,6 +494,194 @@ table{
     opacity: 1;
     right: 0;
 }
-
 /** 註冊 **/
 /***-- course --***/
+
+/*----------------------*/
+
+/***-- faq --***/
+/** 表頭 **/
+.faq_header{
+    background-image: url(../img/bg_QA.png);
+}
+.faq_title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 168px;
+}
+.faq_title h2{
+    font-size: 48px;
+    color: #ffffff;
+    margin-bottom: 17px;
+}
+.faq_title p{
+    font-size: 25px;
+    color: #00cc99;
+    margin-bottom: 50px;
+}
+.search_icon img{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 36px;
+    right: -270px;
+    z-index: 1;
+}
+.faq_title input{
+    border: none;
+    border-radius: 5px;
+    height: 53px;
+    width: 600px;
+    position: relative;
+    padding-left: 20px;
+    font-size: 20px;
+    outline: none;    
+}
+/** 表頭 **/
+
+/** 常見問題＃ **/
+.normal_qa{
+    margin-bottom: 63px;
+}
+.normal_qa h3{
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 6px;
+}
+.normal_qa p{
+    color: #9b9b9b;
+    letter-spacing: 2px;
+    line-height: 1.5em;
+    margin-bottom: 20px;
+}
+.normal_qa p a{
+    text-decoration: none;
+    color: #00cc99;
+    font-weight: bold;
+}
+/** 常見問題＃ **/
+
+/** 怎麼付款＃ **/
+.payment{
+    margin-bottom: 63px;
+}
+.payment h3{
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 6px;
+}
+.payment p{
+    color: #9b9b9b;
+    letter-spacing: 2px;
+    line-height: 1.5em;
+    margin-bottom: 20px;
+}
+.payment ol{
+    list-style-type: decimal;
+    color: #9b9b9b;
+    letter-spacing: 2px;
+    line-height: 1.5em;
+    margin-bottom: 20px;
+}
+.payment ol li{
+    margin-left: 60px;
+    padding-left: 20px;
+}
+.payment a{
+    text-decoration: none;
+    color: #00cc99;
+    font-weight: bold;
+}
+/** 怎麼付款＃ **/
+
+/** 退款＃ **/
+.refund h3{
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 6px;
+}
+.refund p{
+    color: #9b9b9b;
+    letter-spacing: 2px;
+    line-height: 1.5em;
+    margin-bottom: 20px;
+}
+.refund ul{
+    color: #9b9b9b;
+    letter-spacing: 2px;
+    line-height: 1.5em;
+    margin-bottom: 20px;
+    position: relative;
+}
+.refund ul li{
+    margin-left: 35px;
+    color: #9b9b9b;
+}
+.refund ul li:before{
+    content: "·";
+    margin-right: 30px;
+    color: #9b9b9b;
+}
+.refund a{
+    text-decoration: none;
+    color: #00cc99;
+    font-weight: bold;
+}
+.refund .black{
+    color: #000;
+    margin-bottom: 0;
+}
+/** 退款＃ **/
+
+/** 寄信 **/
+.mailbox{
+    background: #ebebeb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 45px 20px 45px;
+}
+.mailbox h2{
+    width: 50%;
+    font-size: 30px;
+    line-height: 2em;
+    letter-spacing: 2px;
+    display: flex;
+    padding-bottom: 260px;
+}
+.mailarea{
+    width: 50%;
+    text-align: right;
+}
+.mailarea input,textarea{
+    width: 95%;
+    height: 45px;
+    padding-left: 20px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    outline: none;
+}
+.mailarea textarea{
+    width: 91%;
+    height: 150px;
+    padding: 10px 20px;
+    resize: none;
+}
+.mailbox input[type="submit"]{
+    width: 20%;
+    background: #00cc99;
+    color: #ffffff;
+    padding-right: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.mailbox input[type="submit"]:hover{
+    background: #00a57c;
+    transition: 0.5s; 
+}
+/** 寄信 **/
+
+/***-- faq --***/
