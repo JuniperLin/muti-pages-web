@@ -3,14 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta property="og:title" content="HexSchool問答" />
+    <meta property="og:description" content="HexSchool六角學院提供最棒的前端課程教學" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://juniperlin.github.io/muti-pages-web/faq.html">
+    <title>HexSchool問與答</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="wrap">
         <div class="faq_header">
             <div class="navbar">
-                <img src="img/logo.png" alt="">
+                <p>HexSchool</p>
                 <ul>
                     <li><a href="index.html">首頁</a></li>
                     <li><a href="course.html">課程</a></li>
@@ -22,8 +26,8 @@
                 <p>別擔心，你想找的答案都在這裡！</p>
                 <a href="#" class="search_icon">
                     <img src="img/search.png" alt="">
+                    <input type="search" id="search" placeholder="Search...">
                 </a>
-                <input type="search" id="search" placeholder="Search...">
             </div>
         </div>
         <div class="content">
@@ -43,11 +47,13 @@
                     <h2><span>怎麼付款＃</span>付款方式保證最多元</h2>
                 </div>
                 <h3>Q：請問可以分期付款嗎？</h3>
-                <ol>A：當然沒問題，在本平台購買我們最高提供 6 期分期。
-                    <li>選擇產品後</li>
-                    <li>在進入金流平台付款時可選擇信用卡分期付款</li>
-                    <li>選擇期數，旁邊會附註每期應付款項</li>
-                </ol>	
+                <p class="default_mb">A：當然沒問題，在本平台購買我們最高提供 6 期分期。
+                    <ol>
+                        <li>選擇產品後</li>
+                        <li>在進入金流平台付款時可選擇信用卡分期付款</li>
+                        <li>選擇期數，旁邊會附註每期應付款項</li>
+                    </ol>	
+                </p>
                 <h3>Q：我沒有信用卡，有沒有其他匯款方案？</h3>
                 <p>A：每個課程現在都提供了其它付款方式，在課程連結旁就可以找到這個其他付款方式，而且我們是採用台灣第三方支付，安全又可靠。</p>
                 <h3>Q：採用其它付款流程，但還沒有收到課程怎麼辦？</h3>
@@ -62,12 +68,14 @@
                 <h3>Q：Udemy 如何退款？</h3>
                 <p>A：透過 Udemy 的課程頁面的 選項 下即可使用退款功能。</p>
                 <h3>Q：其它支付流程如何退款？</h3>
-                <ul>A：請發信到<a href="mailto:service@hexschool.com">service@hexschool.com</a>並詳著以下內容：
-                    <li>退款帳戶</li>
-                    <li>Udemy 用戶名稱</li>
-                    <li>購買時間</li>
-                    <li>退款原因</li>
-                </ul>
+                <p class="default_mb">A：請發信到<a href="mailto:service@hexschool.com">service@hexschool.com</a>並詳著以下內容：
+                    <ul>
+                        <li>退款帳戶</li>
+                        <li>Udemy 用戶名稱</li>
+                        <li>購買時間</li>
+                        <li>退款原因</li>
+                    </ul>
+                </p>
                 <p class="black">接下來，我們會有專人協助退款。退款後請注意：</p>
                 <ul>
                     <li>退款會酌收第三方支付手續費，信用卡一次付清 2.8%、分三期 3%、分六期 3.5%、分 12 期 7%、ATM為 1%，超商為 28 元。</li>
@@ -80,11 +88,8 @@
             <h2>找不到你的問題嗎？<br>直接寄信給我們解決吧！</h2>
             <div class="mailarea">
                 <input type="text" id="name" name="name" placeholder="你的名字是？">
-                <br>
                 <input type="text" id="email" id="email" placeholder="example@mail.com">
-                <br>
                 <textarea name="feedback" id="feedback" cols="30" rows="10" placeholder="你遇到什麼困難呢？"></textarea>
-                <br>
                 <input type="submit" value="送  出">
             </div>
         </div>
@@ -94,9 +99,17 @@
                 <p>©️ 2018 hexschool</p>
             </div>
             <div class="social_link">
-                <p class="facebook"><a href="https://www.facebook.com/hexschool/">六角學院FB</a></p>
-                <p class="twitter"><a href="https://twitter.com/hexschool1">六角學院TW</a></p>
-                <p class="instagram"><a href="https://www.instagram.com/hexschool/">六角學院IG</a></p>
+                <ul>
+                    <li>
+                        <p class="facebook"><a href="https://www.facebook.com/hexschool/">六角學院FB</a></p>
+                    </li>
+                    <li>                
+                        <p class="twitter"><a href="https://twitter.com/hexschool1">六角學院TW</a></p>
+                    </li>
+                    <li>
+                        <p class="instagram"><a href="https://www.instagram.com/hexschool/">六角學院IG</a></p>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
